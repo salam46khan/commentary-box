@@ -16,7 +16,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="w-2/5 ">
-                    <img className="h-full" src={'/public/undraw_podcast_re_wr88.svg'} alt="" />
+                    <img className="h-full" src={'undraw_podcast_re_wr88.svg'} alt="" />
                 </div>
             </div>
         </div>
