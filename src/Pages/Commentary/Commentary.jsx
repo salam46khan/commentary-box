@@ -45,17 +45,17 @@ const Commentary = () => {
 
     return (
         <div className="p-3 h-screen w-full background-image: linear-gradient(to top right)  bg-gradient-to-r from-red-500 to-indigo-500">
-            <div className="container mx-auto flex items-center h-full gap-4">
-                <div className="h-[500px] w-[900px] bg-slate-600 p-4 px-10">
+            <div className="container mx-auto flex items-center h-full gap-4 justify-center">
+                <div className="h-[500px] w-[900px] bg-slate-600 p-4 px-10 text-slate-100">
                     <div>
-                        <p className="text-2xl font-bold text-center text-white fontBriem"><span>{fastTeam}</span> v/s <span>{secondTeam}</span></p>
+                        <p className="text-4xl font-bold text-center text-white fontBriem"><span>{fastTeam}</span> v/s <span>{secondTeam}</span></p>
                     </div>
-                    <div className="p-5 rounded-md bg-[#333] my-2 mx-auto">
-                        <p className="abrilFatface font-bold text-7xl text-center"><span>{run}</span>/<span>{wicket}</span></p>
+                    <div className="p-5 rounded-md bg-[#333] mt-5 mx-auto h-[50%]">
+                        <p className="abrilFatface font-bold text-9xl text-center"><span>{run}</span>/<span>{wicket}</span></p>
                         <hr className="my-2 w-1/2 mx-auto" />
-                        <p className="abrilFatface font-bold text-2xl text-center">{over}.{ball}</p>
+                        <p className="abrilFatface font-bold text-4xl text-center">{over}.{ball}</p>
                     </div>
-                    <div className="flex justify-between z-10 h-[100px]">
+                    <div className="flex justify-between z-10 h-[15%]">
                         <div className="w-1/3 z-0 relative">
                             {playerOneImageUrl && (
                                 <div className="absolute -bottom-10 w-full">
@@ -73,16 +73,16 @@ const Commentary = () => {
                     </div>
                     <div className="flex z-20 justify-between">
                         <div className="w-1/3 bg-[#333] rounded-md z-20 p-2">
-                            <p className="text-center font-bold text-xl">{playerOne}</p>
+                            <p className="text-center font-bold text-2xl">{playerOne? playerOne : "Player Name"}</p>
                             <p className="text-center font-light text-2xl">{playerOneRun} <span>({playerOneBall})</span></p>
                         </div>
                         <div className="w-1/3 bg-[#333] rounded-md z-20 p-2">
-                            <p className="text-center font-bold text-xl">{playerTwo}</p>
+                            <p className="text-center font-bold text-2xl">{playerTwo ? playerTwo : "Player Name"}</p>
                             <p className="text-center font-light text-2xl">{playerTwoRun} <span>({playerTwoBall})</span></p>
                         </div>
                     </div>
                 </div>
-                <div className="flex-1 h-full">
+                <div className="flex-1 h-full flex flex-col justify-center">
                     <div className="rounded-md bg-white/20 shadow-md w-full p-2 text-white">
                         <p className="text-center font-bold text-2xl">Score Card</p>
                         <form className="">
